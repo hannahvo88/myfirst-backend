@@ -6,7 +6,7 @@ import sys
 
 app = Flask(__name__)
 
-@app.route('/api/blog', methods=['GET', 'POST', 'PATCH', 'DELETE'])
+@app.route('/api/blogs', methods=['GET', 'POST', 'PATCH', 'DELETE'])
 def post_handler():
     try:
         conn = mariadb.connect(
